@@ -5,19 +5,19 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class BiTreeNode<T> {
+public class TreeNode<T> {
    private T value;
-   private BiTreeNode<T> left;
-    private BiTreeNode<T> right;
+   private TreeNode<T> left;
+    private TreeNode<T> right;
 
-    BiTreeNode() {
+    TreeNode() {
     }
 
-    BiTreeNode(T value) {
+    TreeNode(T value) {
         this.value = value;
     }
 
-    BiTreeNode(T value, BiTreeNode<T> left, BiTreeNode<T> right) {
+    TreeNode(T value, TreeNode<T> left, TreeNode<T> right) {
         this.value = value;
         this.left = left;
         this.right = right;

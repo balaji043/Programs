@@ -2,17 +2,18 @@ package tech.balaji.december.week1.day1;
 
 import org.junit.Test;
 import tech.balaji.leetcode.december.week1.day1.BiTree;
-import tech.balaji.leetcode.december.week1.day1.BiTreeNode;
+import tech.balaji.leetcode.december.week1.day1.MaximumDepthOfBinaryTreeMain;
+import tech.balaji.leetcode.december.week1.day1.TreeNode;
 
 import static org.junit.Assert.*;
 
-public class MaximumDepthOfBinaryTreeTest {
+public class MaximumDepthOfBinaryTreeMainTest {
 
     @Test
     public void testCreateBinaryTreeAndMaxDepth1() {
         Integer[] numbers = {3, 9, 20, null, null, 15, 7};
         BiTree<Integer> tree = new BiTree<>(numbers);
-        BiTreeNode<Integer> currentNode;
+        TreeNode<Integer> currentNode;
 
         // Bi tree
         assertNotNull(tree);
@@ -57,14 +58,14 @@ public class MaximumDepthOfBinaryTreeTest {
         assertNull(currentNode.getLeft());
 
         // getMax Depth
-        assertEquals(3, tree.getMaxDepth());
+        assertEquals(3, MaximumDepthOfBinaryTreeMain.getMaxDepth(tree.getRoot()));
     }
 
     @Test
     public void testCreateBinaryTreeAndMaxDepth2() {
         Integer[] numbers = {1, null, 2};
         BiTree<Integer> tree = new BiTree<>(numbers);
-        BiTreeNode<Integer> currentNode;
+        TreeNode<Integer> currentNode;
 
         // Bi tree
         assertNotNull(tree);
@@ -87,14 +88,15 @@ public class MaximumDepthOfBinaryTreeTest {
         assertNull(currentNode.getRight());
 
         // max depth 2
-        assertEquals(2, tree.getMaxDepth());
+        assertEquals(2, MaximumDepthOfBinaryTreeMain.getMaxDepth(tree.getRoot()));
+
     }
 
     @Test
     public void testCreateBinaryTreeAndMaxDepth3() {
         Integer[] numbers = {0};
         BiTree<Integer> tree = new BiTree<>(numbers);
-        BiTreeNode<Integer> currentNode;
+        TreeNode<Integer> currentNode;
 
         // Bi tree
         assertNotNull(tree);
@@ -108,7 +110,8 @@ public class MaximumDepthOfBinaryTreeTest {
         assertNull(currentNode.getRight());
 
         // max depth 2
-        assertEquals(1, tree.getMaxDepth());
+        assertEquals(1, MaximumDepthOfBinaryTreeMain.getMaxDepth(tree.getRoot()));
+
     }
 
 
