@@ -1,8 +1,5 @@
 package tech.balaji.hackerearth;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class SquadStackBeautifulNumbers {
 
     static class Number {
@@ -46,11 +43,13 @@ public class SquadStackBeautifulNumbers {
 
     static int solve(int[] arr, int k) {
         minimum = Integer.MAX_VALUE;
-        List<Number> numbers = new ArrayList<>();
+        Number[] numbers = new Number[arr.length];
         int beautifulNumberCount = 0;
-        for (int i : arr) {
-            Number number = new Number(i);
-            numbers.add(number);
+        for (int i = 0; i < arr.length; i++) {
+
+            Number number = new Number(arr[i]);
+            numbers[i] = number;
+
             if (number.isBeautiful)
                 beautifulNumberCount++;
         }
@@ -62,8 +61,8 @@ public class SquadStackBeautifulNumbers {
 
     // Recursive function to print all possible subarrays
     // for given array
-    static void printSubArrays(List<Number> arr, int start, int end, int k) {
-        if (end == arr.size())
+    static void printSubArrays(Number[] arr, int start, int end, int k) {
+        if (end == arr.length)
             return;
 
         if (start > end)
@@ -73,7 +72,7 @@ public class SquadStackBeautifulNumbers {
             int subArrayCount = end - start + 1;
 
             for (int i = start; i <= end; i++)
-                if (arr.get(i).isBeautiful)
+                if (arr[i].isBeautiful)
                     beautifulNumberCount++;
 
             if (subArrayCount < minimum && beautifulNumberCount >= k)
