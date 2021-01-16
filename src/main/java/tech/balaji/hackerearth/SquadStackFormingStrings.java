@@ -34,6 +34,7 @@ public class SquadStackFormingStrings {
 
     static void printAllKLengthRec(char[] string, int currentIndex,
                                    int k) {
+
         if (k == 0) {
             list.add(new String(string));
             System.out.println(string);
@@ -41,19 +42,24 @@ public class SquadStackFormingStrings {
         }
 
         for (char nextChar : vowels) {
+
             if (currentIndex > 0) {
 
                 char currentChar = string[currentIndex - 1];
 
+                // a should always be followed by e or o
                 if (isCharA(currentChar) && !(isCharE(nextChar) || isCharO(nextChar)))
                     continue;
 
+                // e should always be followed by i
                 if (isCharE(currentChar) && !isCharI(nextChar))
                     continue;
 
+                // I should never be followed by i
                 if (isCharI(currentChar) && isCharI(nextChar))
                     continue;
 
+                // o or u should always be followed by i
                 if ((isCharO(currentChar) || isCharU(currentChar)) && !isCharI(nextChar))
                     continue;
             }
