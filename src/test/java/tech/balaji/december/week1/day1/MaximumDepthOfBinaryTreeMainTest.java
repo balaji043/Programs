@@ -1,9 +1,9 @@
 package tech.balaji.december.week1.day1;
 
 import org.junit.Test;
-import tech.balaji.leetcode.december.week1.day1.BiTree;
-import tech.balaji.leetcode.december.week1.day1.MaximumDepthOfBinaryTreeMain;
-import tech.balaji.leetcode.december.week1.day1.TreeNode;
+import tech.balaji.leetcode.monthlychallenges.december.week1.day1.BiTree;
+import tech.balaji.leetcode.monthlychallenges.december.week1.day1.MaximumDepthOfBinaryTreeMain;
+import tech.balaji.leetcode.monthlychallenges.december.week1.day1.TreeNode;
 
 import static org.junit.Assert.*;
 

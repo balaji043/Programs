@@ -1,4 +1,4 @@
-package tech.balaji.leetcode.december.week1.day1;
+package tech.balaji.leetcode.monthlychallenges.december.week1.day1;
 
 import lombok.Getter;
 import lombok.Setter;

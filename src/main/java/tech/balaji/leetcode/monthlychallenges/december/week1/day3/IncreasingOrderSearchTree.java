@@ -1,7 +1,7 @@
-package tech.balaji.leetcode.december.week1.day3;
+package tech.balaji.leetcode.monthlychallenges.december.week1.day3;
 
-import tech.balaji.leetcode.december.week1.day1.BiTree;
-import tech.balaji.leetcode.december.week1.day1.TreeNode;
+import tech.balaji.leetcode.monthlychallenges.december.week1.day1.BiTree;
+import tech.balaji.leetcode.monthlychallenges.december.week1.day1.TreeNode;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package tech.balaji.leetcode.december.week1.day1;
+package tech.balaji.leetcode.monthlychallenges.december.week1.day1;
 
 
 import static java.lang.Math.max;

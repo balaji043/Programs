@@ -1,4 +1,4 @@
-package tech.balaji.leetcode.december.week1.day2;
+package tech.balaji.leetcode.monthlychallenges.december.week1.day2;
 
 public class LinkedListRandomNodeMain {
     public static void main(String[] args) {
