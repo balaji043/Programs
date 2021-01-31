@@ -1,23 +1,4 @@
 # Project exclude paths
 /target/
-/.idea/.gitignore
-/.idea/sonarlint/issuestore/9/f/9f4317fe9cdb1f7ba8b51eee222f81fae3b1763f
-/.idea/sonarlint/issuestore/9/5/95af3069f54fb30edec0ab13f36e41375ca86815
-/.idea/sonarlint/issuestore/6/0/603b3d1f10f89c9076bafeccca7977ce50f6857c
-/.idea/sonarlint/issuestore/0/7/0773ae7341546ead5efda1181201eb6a77aa51be
-/.idea/sonarlint/issuestore/7/8/782bbd0d290ba02ac752e7d3927cf66f16aa9fce
-/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-/.idea/sonarlint/issuestore/8/7/8777631a16fa2d713a4fc745d53bd88815c7d3d8
-/.idea/sonarlint/issuestore/a/0/a04e9454451ccc8a9cd444b23177636f5840c963
-/.idea/sonarlint/issuestore/b/2/b2687c93c744e99d4347ed41054033783102f3ac
-/.idea/sonarlint/issuestore/c/8/c8a9da7d45d08c58bfdcbe330195e9d97546deaf
-/.idea/compiler.xml
-/.idea/sonarlint/issuestore/d/c/dcaf25597571cecdca3b5309575dc309f2d31d08
-/.idea/sonarlint/issuestore/f/5/f5c272c6fb9ac1537f22f0d1ec3b3c63c622c708
-/.idea/sonarlint/issuestore/f/e/feea71a7cde1fecd0b602bf8c0559a9b20389c5b
-/.idea/sonarlint/issuestore/index.pb
-/.idea/jarRepositories.xml
-/.idea/misc.xml
+/.idea/*
 /Programs.iml
-/.idea/uiDesigner.xml
-/.idea/vcs.xml
